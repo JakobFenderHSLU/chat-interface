@@ -34,7 +34,7 @@ if not check_password():
 # Main Streamlit app starts here
 with st.sidebar:
     possible_models = ["ChatGPT-4", "google bard", "?"]
-    selected_model = st.selectbox("model_selector", possible_models, 0)
+    selected_model = st.selectbox("Select Model", possible_models, 0)
 
 if "messages" not in st.session_state:
     messages = [{"role": "assistant", "message": "Hallo, wie kann ich dir helfen?"}]
